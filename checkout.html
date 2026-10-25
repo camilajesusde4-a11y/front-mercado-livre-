@@ -136,7 +136,7 @@
         <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <img
-  src="images/logo.png"
+  src="images/logo-ml.png"
   alt="Descrição da imagem"
   style="display:inline-block; max-width:100%; width:auto; height:auto!important; vertical-align:middle;"/>
             </div>
@@ -322,6 +322,15 @@
     </div>
     <script>
         // Variáveis globais para o checkout
+        // CONFIGURACAO DA OFERTA - ALTERE SOMENTE AQUI
+        const PRODUTO = {
+            name: "Kit Whey Protein",
+            image: "images/whey.jpg",
+            price: 79.90,
+            quantity: 1,
+            storage: "",
+            color: ""
+        };
         let paymentIntervalId = null;
         let totalValue = 0; // Armazena o valor total em decimal
         const frete = 0.00; // Valor fixo do frete, como no seu React
@@ -337,8 +346,7 @@
         // 2. Roda quando a página carrega
         document.addEventListener('DOMContentLoaded', () => {
             // Pega o carrinho salvo pelo index.html
-            const cartData = localStorage.getItem('checkoutCart');
-            const cart = cartData ? JSON.parse(cartData) : [];
+            const cart = [PRODUTO];
 
             if (cart.length === 0) {
                 // Se não há carrinho, informa o usuário e talvez o redirecione
