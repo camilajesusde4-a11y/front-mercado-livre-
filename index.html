@@ -510,15 +510,19 @@
         }
 
         .price {
-            font-size: 36px;
-            font-weight: 300;
-            margin-bottom: 5px;
-        }
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+}
 
         .installments {
-            font-size: 16px;
-            color: #00A650;
-        }
+    font-size: 16px;
+    font-weight: 400;
+    color: #00A650;
+    line-height: 1.4;
+}
 
         .section-title {
             font-size: 16px;
@@ -660,21 +664,27 @@
         }
 
         .photo-gallery {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
 
-        .photo-gallery .photo {
-            width: 80px;
-            height: 80px;
-            background-color: #f0f0f0;
-            border-radius: 6px;
-            border: 1px solid #eee;
-            background-size: cover;
-            background-position: center;
-        }
+.photo-gallery .photo {
+    flex: 0 0 112px;
+    width: 112px;
+    height: 112px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    background-size: cover;
+    background-position: center;
+}
 
         .featured-review-box {
             background-color: #f7f7f7;
@@ -1031,7 +1041,152 @@
                 display: flex;
             }
         }
-    </style>
+            /* OPINIOES COM MIDIA - VISUAL COMPACTO */
+        .reviews-with-photos .review-media {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 3px 0 8px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
+
+        .reviews-with-photos .review-media img,
+        .reviews-with-photos .review-media video {
+            display: block;
+            flex: 0 0 76px;
+            width: 76px;
+            height: 76px;
+            object-fit: cover;
+            border-radius: 7px;
+            background: #f5f5f5;
+            border: 1px solid #eeeeee;
+        }
+
+        .reviews-with-photos .individual-review {
+            padding: 14px 0;
+        }
+
+        .reviews-with-photos .individual-review p {
+            font-size: 14px;
+            line-height: 1.45;
+            margin: 7px 0 10px;
+        }
+
+        .reviews-with-photos .star-rating {
+            color: #3483fa;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 600px) {
+            .reviews-with-photos .review-media img,
+            .reviews-with-photos .review-media video {
+                flex-basis: 72px;
+                width: 72px;
+                height: 72px;
+            }
+        }
+            /* CARACTERISTICAS DO PRODUTO - TABELA MOBILE */
+        .product-features-section .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 22px 0 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .product-features-section .feature-item {
+            display: flex;
+            align-items: center;
+            min-height: 58px;
+            margin: 0;
+            padding: 14px 16px;
+            border: none;
+            background: #ffffff;
+        }
+
+        .product-features-section .feature-item:nth-child(odd) {
+            background: #eeeeee;
+        }
+
+        .product-features-section .feature-item p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        .product-features-section .feature-item strong {
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .product-features-section .feature-item {
+                padding: 15px 14px;
+                min-height: 56px;
+            }
+
+            .product-features-section .feature-item p {
+                font-size: 14px;
+            }
+        }
+            /* TABELA DE CARACTERISTICAS - DUAS COLUNAS */
+        .product-features-section .features-list {
+            margin: 15px 0 20px;
+        }
+
+        .product-features-section .feature-item {
+            display: grid;
+            grid-template-columns: 48% 52%;
+            align-items: center;
+            gap: 0;
+            padding: 13px 12px;
+            box-sizing: border-box;
+        }
+
+        .product-features-section .feature-item strong,
+        .product-features-section .feature-item span {
+            font-size: 14px;
+            line-height: 1.4;
+            overflow-wrap: anywhere;
+        }
+
+        .product-features-section .feature-item strong {
+            padding-right: 12px;
+            font-weight: 600;
+        }
+
+        .product-features-section .feature-item span {
+            font-weight: 400;
+        }
+
+        .product-features-section .feature-description {
+            margin-top: 18px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        .product-features-section .feature-description p {
+            margin-top: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .product-features-section .feature-item {
+                grid-template-columns: 48% 52%;
+                padding: 12px 10px;
+                min-height: 48px;
+            }
+        }
+            /* CONTROLE DE ZOOM MOBILE */
+        html {
+            touch-action: manipulation;
+        }
+</style>
 </head>
 
 <body>
@@ -1220,22 +1375,29 @@
         </div>
 
 
-        <div class="section product-features-section">
+                <div class="section product-features-section">
             <h2>Características do produto</h2>
+            <h3>Características principais</h3>
+
             <ul class="features-list">
                 <li class="feature-item">
-                    <p><strong>Formato de venda:</strong> Kit.</p>
+                    <strong>Formato de venda</strong>
+                    <span>Kit</span>
                 </li>
                 <li class="feature-item">
-                    <p><strong>Marca:</strong> Bodybuilders.</p>
+                    <strong>Marca</strong>
+                    <span>Bodybuilders</span>
                 </li>
                 <li class="feature-item">
-                    <p><strong>Unidades por embalagem:</strong> 6.</p>
-                </li>
-                <li class="feature-item">
-                    <p><strong>Descrição</strong>Aviso legal: Produto indicado para maiores de 14 anos. Recomenda-se consumir junto a alimentos para melhor absorção. Este é um suplemento dietético, não um medicamento, e deve ser utilizado para complementar dietas insuficientes. Consulte sempre seu médico ou farmacêutico antes do uso.</p>
+                    <strong>Unidades por embalagem</strong>
+                    <span>6</span>
                 </li>
             </ul>
+
+            <div class="feature-description">
+                <strong>Aviso legal</strong>
+                <p>Produto indicado para maiores de 14 anos. Recomenda-se consumir junto a alimentos para melhor absorção. Este é um suplemento dietético, não um medicamento, e deve ser utilizado para complementar dietas insuficientes. Consulte sempre seu médico ou farmacêutico antes do uso.</p>
+            </div>
         </div>
 
         <div class="section" id="perguntas">
@@ -1270,20 +1432,61 @@
                 </div>
                 <div class="reviews-list">
                     <div class="reviews-with-photos">
-                        <h3>Opiniões com fotos</h3>
-                        <div class="photo-gallery">
-                            <div class="photo"
-                                style="background-image: url('images/produto5.webp')">
-                            </div>
-                            <div class="photo"
-                                style="background-image: url('images/produto6.webp')">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured-reviews">
-                        <div class="featured-review-box">Bom vou falar da minha experiência quando fui comprar o produto só li q o gosto era ruim mais funciona aí comprei pq funciona não pela sabor ,. Pq estava procurando algo q desse resultado e na verdade o sabor não é nada daquilo q falaram e uma delícia tanto com leite ou com água, quem fala q tem gosto ruim e fresco geração todinho gente fresca viu ! podem compra o produto faz efeito e o gosto e excelente.</div>
-                    </div>
-                    <div class="individual-review"><span class="review-date">04 nov. 2025</span>
+    <h3>Opiniões com fotos e vídeos</h3>
+
+    <div class="individual-review" id="opiniao-ilustrativa-7">
+        <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Escreva aqui o texto da opinião 1.</p>
+        <p><small>Exemplo de apresentação de opinião</small></p>
+        <div class="review-media">
+            <img src="https://exemplo.com/foto1.jpg" alt="Foto 1">
+            <img src="https://exemplo.com/foto2.jpg" alt="Foto 2">
+            <img src="https://exemplo.com/foto3.jpg" alt="Foto 3">
+            <img src="https://exemplo.com/foto4.jpg" alt="Foto 4">
+        </div>
+    </div>
+
+    <div class="individual-review" id="opiniao-ilustrativa-8">
+        <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Escreva aqui o texto da opinião 2.</p>
+        <p><small>Exemplo de apresentação de opinião</small></p>
+        <div class="review-media">
+            <img src="https://exemplo.com/foto5.jpg" alt="Foto 1">
+            <img src="https://exemplo.com/foto6.jpg" alt="Foto 2">
+            <video controls playsinline preload="metadata">
+                <source src="https://exemplo.com/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="individual-review" id="opiniao-ilustrativa-9">
+        <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Escreva aqui o texto da opinião 3.</p>
+        <p><small>Exemplo de apresentação de opinião</small></p>
+        <div class="review-media">
+            <img src="https://exemplo.com/foto7.jpg" alt="Foto 1">
+            <img src="https://exemplo.com/foto8.jpg" alt="Foto 2">
+            <img src="https://exemplo.com/foto9.jpg" alt="Foto 3">
+        </div>
+    </div>
+
+    <div class="individual-review" id="opiniao-ilustrativa-10">
+        <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Escreva aqui o texto da opinião 4.</p>
+        <p><small>Exemplo de apresentação de opinião</small></p>
+        <div class="review-media">
+            <img src="https://exemplo.com/foto10.jpg" alt="Foto 1">
+            <img src="https://exemplo.com/foto11.jpg" alt="Foto 2">
+            <img src="https://exemplo.com/foto12.jpg" alt="Foto 3">
+            <video controls playsinline preload="metadata">
+                <source src="https://exemplo.com/video2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
+<h3>Outras opiniões</h3>
+<div class="individual-review"><span class="review-date">04 nov. 2025</span>
                         <div class="star-rating">★★★★☆</div>
                         <p>Produto excelente! minha filha amou!.</p>
                         <div class="review-actions"><button onclick="toggleHelpful(this, 60)">É útil | 60</button></div>
@@ -1313,6 +1516,10 @@
                         <div class="star-rating">★★★★★</div>
                         <p><strong>Fantástico!</strong> Sem palavras para descrever a qualidade do produto.</p>
                         <div class="review-actions"><button onclick="toggleHelpful(this, 31)">É útil | 31</button></div>
+                    
+                    
+                    </div>
+
                     </div>
                 </div>
             </div>
