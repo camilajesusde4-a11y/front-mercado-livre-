@@ -1186,6 +1186,63 @@
         html {
             touch-action: manipulation;
         }
+        /* RESUMO COMPACTO DAS OPINIOES */
+        .reviews-section .reviews-content {
+            display: block;
+        }
+
+        .reviews-section .review-summary {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 26px;
+        }
+
+        .reviews-section .review-summary .overall-rating {
+            font-size: 52px;
+            font-weight: 500;
+            line-height: 1;
+            color: #3483fa;
+            margin: 0;
+        }
+
+        .reviews-section .review-summary-details {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .reviews-section .review-summary-details .star-rating {
+            color: #3483fa;
+            font-size: 22px;
+            line-height: 1.2;
+        }
+
+        .reviews-section .review-summary-details .total-reviews {
+            margin: 0;
+            font-size: 14px;
+            color: #737373;
+        }
+
+        .reviews-section .reviews-list {
+            width: 100%;
+            min-width: 0;
+        }
+
+        @media (max-width: 600px) {
+            .reviews-section .review-summary {
+                gap: 12px;
+                margin-bottom: 22px;
+            }
+
+            .reviews-section .review-summary .overall-rating {
+                font-size: 46px;
+            }
+
+            .reviews-section .review-summary-details .star-rating {
+                font-size: 19px;
+            }
+        }
 </style>
 </head>
 
@@ -1414,25 +1471,15 @@
             <h2>Opiniões do produto</h2>
             <div class="reviews-content">
                 <div class="review-summary">
-                    <p class="overall-rating">4.7</p>
-                    <div class="star-rating">★★★★☆</div>
-                    <p class="total-reviews">62 opiniões</p>
-                    <div class="characteristic-rating">
-                        <p>Qualidade do material</p>
-                        <div class="star-rating">★★★★★</div>
-                    </div>
-                    <div class="characteristic-rating">
-                        <p>Desempenho</p>
-                        <div class="star-rating">★★★★★</div>
-                    </div>
-                    <div class="characteristic-rating">
-                        <p>Duração da bateria</p>
-                        <div class="star-rating">★★★★☆</div>
-                    </div>
-                </div>
+    <p class="overall-rating">4.7</p>
+    <div class="review-summary-details">
+        <div class="star-rating">★★★★☆</div>
+        <p class="total-reviews">62 opiniões</p>
+    </div>
+</div>
                 <div class="reviews-list">
                     <div class="reviews-with-photos">
-    <h3>Opiniões com fotos e vídeos</h3>
+    <h3>Opiniões com fotos</h3>
 
     <div class="individual-review" id="opiniao-ilustrativa-7">
         <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
