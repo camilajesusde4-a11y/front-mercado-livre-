@@ -132,6 +132,112 @@
         html {
             touch-action: manipulation;
         }
+        /* PIX MOBILE - AJUSTES RESPONSIVOS */
+        .pix-modal-overlay {
+            align-items: center;
+            padding: 12px;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+
+        .pix-modal-content {
+            width: 100%;
+            max-width: 450px;
+            max-height: calc(100dvh - 24px);
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 480px) {
+            .pix-modal-overlay {
+                padding: 0;
+            }
+
+            .pix-modal-content {
+                width: 100%;
+                max-width: none;
+                max-height: 100dvh;
+                border-radius: 0;
+                padding: 18px;
+            }
+        }
+        /* NOVO LAYOUT PIX */
+        .pix-ref-security {
+            background: #fff4c2;
+            color: #333;
+            padding: 13px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 6px;
+        }
+        .pix-ref-security span { color: #00a650; }
+        .pix-ref-amount {
+            text-align: center;
+            padding: 20px 8px 12px;
+        }
+        .pix-ref-amount div { color: #666; font-size: 13px; }
+        .pix-ref-amount strong {
+            display: block;
+            font-size: 32px;
+            color: #333;
+            margin: 5px 0;
+        }
+        .pix-ref-amount p { font-size: 14px; color: #555; }
+        .pix-ref-status {
+            background: #fff2b2;
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            color: #765800;
+            border-radius: 5px;
+            margin: 10px 0 20px;
+        }
+        .pix-ref-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin: 20px 0 12px;
+        }
+        .pix-ref-steps {
+            list-style: decimal;
+            padding-left: 22px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+        }
+        .pix-ref-notice {
+            background: #eaf3ff;
+            color: #355d91;
+            padding: 13px;
+            border-radius: 6px;
+            font-size: 13px;
+            line-height: 1.5;
+            margin: 16px 0;
+        }
+        .pix-ref-copy-button {
+            width: 100%;
+            background: #3483fa;
+            color: white;
+            padding: 14px;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        .pix-ref-waiting {
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            margin-top: 18px;
+        }
+        #pixQrCode {
+            width: 220px;
+            height: 220px;
+            min-height: 0;
+            object-fit: contain;
+            margin: 20px auto;
+        }
 </style>
 </head>
 <body class="bg-gray-100">
@@ -297,19 +403,50 @@
                 <p>Gerando seu PIX... Aguarde.</p>
             </div>
 
-            <div id="pixPaymentInfo" class="hidden">
-                <p style="text-align: center;">Escaneie o QR Code abaixo:</p>
-                <img id="pixQrCode" src="" alt="PIX QR Code">
-                <p style="text-align: center; margin-top: 15px;">Ou copie o código:</p>
-                <div class="pix-copy-area">
-                    <input type="text" id="pixCopyPaste" readonly>
-                    <button onclick="copyPixCode()">Copiar</button>
+                        <div id="pixPaymentInfo" class="hidden">
+                <div class="pix-ref-security">
+                    <span>✓</span> Pague com segurança via Pix
                 </div>
-                <p style="text-align: center; font-weight: bold; margin-top: 20px;">
-                    <span class="pix-loader-spinner" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 5px;"></span>
-                    Aguardando pagamento...
-                </p>
+
+                <div class="pix-ref-amount">
+                    <div>Valor do pagamento</div>
+                    <strong id="pixDisplayAmount">R$ --,--</strong>
+                    <p>Pague via Pix para garantir sua compra</p>
+                </div>
+
+                <div class="pix-ref-status">
+                    Aguardando pagamento
+                </div>
+
+                <h3 class="pix-ref-title">Escaneie um código QR para pagar</h3>
+
+                <ol class="pix-ref-steps">
+                    <li>Acesse o app ou site do seu banco.</li>
+                    <li>Escolha a opção de pagamento via Pix.</li>
+                    <li>Escaneie o código QR ou use o Pix Copia e Cola.</li>
+                </ol>
+
+                <img id="pixQrCode" src="" alt="QR Code para pagamento Pix">
+
+                <div class="pix-ref-notice">
+                    Após o pagamento, aguarde a confirmação automática do pedido.
+                </div>
+
+                <h3 class="pix-ref-title">Ou copie este código para fazer o pagamento</h3>
+
+                <div class="pix-copy-area">
+                    <input type="text" id="pixCopyPaste" readonly aria-label="Código Pix copia e cola">
+                    <button type="button" onclick="copyPixCode()">Copiar</button>
+                </div>
+
+                <button type="button" class="pix-ref-copy-button" onclick="copyPixCode()">
+                    Copiar código Pix
+                </button>
+
+                <p class="pix-ref-waiting">Aguardando confirmação do pagamento...</p>
             </div>
+
+
 
             <div id="pixSuccessMessage" class="hidden" style="text-align: center; padding: 40px 0; color: #00A650;">
                 <h3 style="font-size: 24px;">✓</h3>
@@ -328,13 +465,13 @@
         // Variáveis globais para o checkout
         // CONFIGURACAO DA OFERTA - ALTERE SOMENTE AQUI
         const PRODUTO = {
-            name: "Kit Whey Protein",
-            image: "images/whey.jpg",
-            price: 79.90,
-            quantity: 1,
-            storage: "",
-            color: ""
-        };
+    name: "Capacete LS2",
+    image: "images/whey.jpg",
+    price: 39.45,
+    quantity: 1,
+    storage: "",
+    color: ""
+};
         let paymentIntervalId = null;
         let totalValue = 0; // Armazena o valor total em decimal
         const frete = 0.00; // Valor fixo do frete, como no seu React
@@ -481,6 +618,7 @@
 
                 document.getElementById('pixQrCode').src = qrCodeUrl || 'https://quickchart.io/qr?size=280&text=' + encodeURIComponent(qrCodeText);
                 document.getElementById('pixCopyPaste').value = qrCodeText;
+                document.getElementById('pixDisplayAmount').textContent = formatCurrency(totalPrice);
                 document.getElementById('pixLoader').classList.add('hidden');
                 document.getElementById('pixPaymentInfo').classList.remove('hidden');
 
@@ -539,11 +677,10 @@
                     // window.location.href = 'obrigado.html';
 
                 } else if (data.status === 'ERRO') {
-                    clearInterval(paymentIntervalId);
-                    paymentIntervalId = null;
-                    document.getElementById('pixPaymentInfo').classList.add('hidden');
-                    document.getElementById('pixErrorDetails').textContent = data.details || 'Ocorreu um erro no servidor.';
-                    document.getElementById('pixErrorMessage').classList.remove('hidden');
+                    console.warn('Falha na consulta do PIX:', data.details);
+                    document.getElementById('pixPaymentInfo').classList.remove('hidden');
+                    document.getElementById('pixSuccessMessage').classList.add('hidden');
+                    document.getElementById('pixErrorMessage').classList.add('hidden');
                 }
                 // Se 'PENDENTE', continua o loop
 
