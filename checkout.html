@@ -238,6 +238,10 @@
             object-fit: contain;
             margin: 20px auto;
         }
+/* GARANTE QUE O CARREGAMENTO DESAPARECA */
+#pixLoader.hidden {
+    display: none !important;
+}
 /* CARREGAMENTO PIX EM TELA CHEIA */
 .pix-modal-overlay:has(#pixLoader:not(.hidden)) {
     background: #ffffff !important;
@@ -436,8 +440,6 @@
     <h2 style="font-size:28px; font-weight:600; color:#111; margin:0 0 32px;">Já é quase sua!</h2>
     <div class="pix-loader-spinner"></div>
 </div>
-                <p>Gerando seu PIX... Aguarde.</p>
-            </div>
 
                         <div id="pixPaymentInfo" class="hidden">
                 <div class="pix-ref-security">
