@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -510,19 +510,19 @@
         }
 
         .price {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -0.5px;
-    margin-bottom: 5px;
-}
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+            margin-bottom: 5px;
+        }
 
         .installments {
-    font-size: 16px;
-    font-weight: 400;
-    color: #00A650;
-    line-height: 1.4;
-}
+            font-size: 16px;
+            font-weight: 400;
+            color: #00A650;
+            line-height: 1.4;
+        }
 
         .section-title {
             font-size: 16px;
@@ -664,27 +664,27 @@
         }
 
         .photo-gallery {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 24px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-bottom: 8px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-}
+            display: flex;
+            gap: 10px;
+            margin-bottom: 24px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 8px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
 
-.photo-gallery .photo {
-    flex: 0 0 112px;
-    width: 112px;
-    height: 112px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    border: 1px solid #eee;
-    background-size: cover;
-    background-position: center;
-}
+        .photo-gallery .photo {
+            flex: 0 0 112px;
+            width: 112px;
+            height: 112px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            background-size: cover;
+            background-position: center;
+        }
 
         .featured-review-box {
             background-color: #f7f7f7;
@@ -857,7 +857,7 @@
             border: 1px solid #f0f0f0;
             border-radius: 8px;
             /* Adicionado para caso a URL da imagem demore a carregar */
-            min-height: 250px; 
+            min-height: 250px;
             background-color: #f9f9f9;
         }
 
@@ -1041,7 +1041,8 @@
                 display: flex;
             }
         }
-            /* OPINIOES COM MIDIA - VISUAL COMPACTO */
+
+        /* OPINIOES COM MIDIA - VISUAL COMPACTO */
         .reviews-with-photos .review-media {
             display: flex;
             align-items: center;
@@ -1083,6 +1084,7 @@
         }
 
         @media (max-width: 600px) {
+
             .reviews-with-photos .review-media img,
             .reviews-with-photos .review-media video {
                 flex-basis: 72px;
@@ -1090,7 +1092,8 @@
                 height: 72px;
             }
         }
-            /* CARACTERISTICAS DO PRODUTO - TABELA MOBILE */
+
+        /* CARACTERISTICAS DO PRODUTO - TABELA MOBILE */
         .product-features-section .features-list {
             list-style: none;
             padding: 0;
@@ -1134,7 +1137,8 @@
                 font-size: 14px;
             }
         }
-            /* TABELA DE CARACTERISTICAS - DUAS COLUNAS */
+
+        /* TABELA DE CARACTERISTICAS - DUAS COLUNAS */
         .product-features-section .features-list {
             margin: 15px 0 20px;
         }
@@ -1182,10 +1186,12 @@
                 min-height: 48px;
             }
         }
-            /* CONTROLE DE ZOOM MOBILE */
+
+        /* CONTROLE DE ZOOM MOBILE */
         html {
             touch-action: manipulation;
         }
+
         /* RESUMO COMPACTO DAS OPINIOES */
         .reviews-section .reviews-content {
             display: block;
@@ -1243,15 +1249,14 @@
                 font-size: 19px;
             }
         }
-</style>
+    </style>
 </head>
 
 <body>
 
     <header>
         <div class="content-wrapper">
-            <div class="header-top"><a href="#"><img src="images/logo-ml.png" alt="Mercado Livre"
-                        class="logo"></a>
+            <div class="header-top"><a href="#"><img src="images/logo-ml.png" alt="Mercado Livre" class="logo"></a>
                 <form class="search-form"><input type="text" class="search-input"
                         placeholder="Buscar produtos, marcas e muito mais..."><button type="submit"
                         class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -1259,9 +1264,9 @@
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                         </svg></button></form>
-                <div class="mobile-cart" onclick="toggleCart()" style="display: none;"><img
-                        src="images/cart.png" alt="Carrinho"><span class="cart-count"
-                        id="mobileCartCount">0</span></div><a href="#" class="promo-banner-link"><img
+                <div class="mobile-cart" onclick="toggleCart()" style="display: none;"><img src="images/cart.png"
+                        alt="Carrinho"><span class="cart-count" id="mobileCartCount">0</span></div><a href="#"
+                    class="promo-banner-link"><img
                         src="https://http2.mlstatic.com/D_NQ_700026-MLA117883897048_102026-OO.webp"
                         class="promo-banner-img"></a>
             </div>
@@ -1290,8 +1295,8 @@
                 </ul>
                 <div class="user-icons"><span class="notification-bell">🔔<span
                             class="notification-dot"></span></span><span class="cart-icon" onclick="toggleCart()"><img
-                            src="images/cart.png" alt="Carrinho"><span class="cart-count"
-                            id="cartCount">0</span></span></div>
+                            src="images/cart.png" alt="Carrinho"><span class="cart-count" id="cartCount">0</span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -1369,17 +1374,29 @@
             <div class="product-gallery">
                 <div class="thumbnails">
                     <div class="thumb"
-                        style="background-image: url('images/produto1.webp')"
-                        onclick="changeImage(0)"></div>
+                        style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_2X_605517-MLA116415563636_092026-F.webp')"
+                        onclick="changeImage(0)">
+                    </div>
                     <div class="thumb"
-                        style="background-image: url('images/produto2.webp')"
-                        onclick="changeImage(1)"></div>
+                        style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_2X_712038-MLA117758146115_092026-F.webp')"
+                        onclick="changeImage(1)">
+                    </div>
                     <div class="thumb"
-                        style="background-image: url('images/produto3.webp')"
-                        onclick="changeImage(2)"></div>
+                        style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_2X_999452-MLA116267126900_092026-F.webp')"
+                        onclick="changeImage(2)">
+                    </div>
                     <div class="thumb"
-                        style="background-image: url('images/produto4.webp')"
-                        onclick="changeImage(3)"></div>
+                        style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_2X_872851-MLA117758146163_092026-F.webp')"
+                        onclick="changeImage(3)">
+                    </div>
+                    <div class="thumb"
+                        style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_2X_716508-MLA116267274388_092026-F.webp')"
+                        onclick="changeImage(4)">
+                    </div>
+                    <div class="thumb"
+                        style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_2X_615828-MLA116415652012_092026-F.webp')"
+                        onclick="changeImage(5)">
+                    </div>
 
                 </div>
                 <div class="main-image" id="mainImage"></div>
@@ -1389,21 +1406,21 @@
             </div>
             <div class="product-info">
                 <div class="product-details">
-                    <h1>Capacete LS2</h1>
+                    <h1>Mini Aspirador de Pó Portátil 4 em 1 USB</h1>
                     <div class="rating">4.9 ★★★★★ (66)</div>
-                    <div class="price" id="productPrice">R$ 39,45</div>
+                    <div class="price" id="productPrice">R$ 87,60</div>
                     <div class="installments">À vista no Pix</div>
-                    <div class="section-title">Sabor:<strong id="selectedColor"> Morango</strong></div>
-                    <div class="color-options">
-                        <div class="option-box active" onclick="selectColor(' Morango', this)"> Morango</div>
-                        <div class="option-box active" onclick="selectColor(' Chocolate', this)"> Chocolate</div>
-                        <div class="option-box active" onclick="selectColor(' Baunilha', this)"> Baunilha</div>
+                    <div class="section-title">
+                        Cor: <strong id="selectedColor">Preto</strong>
                     </div>
-                
+                    <div class="color-options">
+                        <div class="option-box active" onclick="selectColor('Preto', this)">Preto</div>
+                    </div>
+
 
                 </div>
                 <div class="shipping-info">
-                    <div class="price" id="finalPrice">R$ 39,45</div>
+                    <div class="price" id="finalPrice">R$ 87,60</div>
                     <button class="btn btn-primary" style="width:100%; margin-top:10px;" onclick="buyNow()">Comprar
                         agora</button><button class="btn btn-secondary" style="width:100%; margin-top:10px;"
                         onclick="addToCart()">Adicionar ao carrinho</button>
@@ -1413,48 +1430,89 @@
 
         <div class="section product-knowledge-section">
             <h2>O que você precisa saber sobre este produto</h2>
+
             <div id="description-content">
-                <p>Mais detalhes!</p>
-
                 <ul>
-                    <li><strong>Unidades por embalagem:</strong> 6.</li>
-                    <li><strong>Unidades por kit:</strong> 7.</li>
-                    <li><strong>Tipo de embalagem:</strong> Pote.</li>
-                    <li><strong>Suplemento de uso nutricional/esportivo.</strong></li>
-                    <li><strong>Tamanho da porção:</strong> 50g.</li>
-                    <li><strong>Idade mínima recomendada:</strong> 14 anos.</li>
-                
-
+                    <li>Voltagem: 127/220V.</li>
+                    <li>Sopra superfícies.</li>
+                    <li>Funciona com saco permanente de papel.</li>
+                    <li>Fonte de alimentação: bateria.</li>
+                    <li>Com base de carregamento.</li>
                 </ul>
 
-                <p><strong>Energia e performance garantidas! Um suplemento completo, cheio de qualidade e confiança para Força, foco e disposição!</strong></p>
+                <p>
+                    <strong>Mais praticidade para sua rotina!
+                        Com o Mini Aspirador 4 em 1, você limpa cantinhos difíceis,
+                        remove poeira e mantém seu carro e sua casa sempre em ordem.
+                        Compacto, versátil e fácil de usar!</strong>
+                </p>
             </div>
         </div>
 
 
-                <div class="section product-features-section">
+        <div class="section product-features-section">
             <h2>Características do produto</h2>
-            <h3>Características principais</h3>
 
+            <h3>Características gerais</h3>
             <ul class="features-list">
                 <li class="feature-item">
-                    <strong>Formato de venda</strong>
-                    <span>Kit</span>
-                </li>
-                <li class="feature-item">
                     <strong>Marca</strong>
-                    <span>Bodybuilders</span>
+                    <span>Soprador e aspirador turbo</span>
                 </li>
                 <li class="feature-item">
-                    <strong>Unidades por embalagem</strong>
-                    <span>6</span>
+                    <strong>Linha</strong>
+                    <span>AUTOMOTIVO CASA</span>
+                </li>
+                <li class="feature-item">
+                    <strong>Modelo</strong>
+                    <span>Soprador de folhas turbo</span>
+                </li>
+                <li class="feature-item">
+                    <strong>Modelo alfanumérico</strong>
+                    <span>act-023</span>
+                </li>
+                <li class="feature-item">
+                    <strong>Capacidade em volume</strong>
+                    <span>400 ml</span>
+                </li>
+                <li class="feature-item">
+                    <strong>Cor</strong>
+                    <span>Preto</span>
+                </li>
+                <li class="feature-item">
+                    <strong>Voltagem</strong>
+                    <span>127/220V</span>
                 </li>
             </ul>
 
-            <div class="feature-description">
-                <strong>Aviso legal</strong>
-                <p>Produto indicado para maiores de 14 anos. Recomenda-se consumir junto a alimentos para melhor absorção. Este é um suplemento dietético, não um medicamento, e deve ser utilizado para complementar dietas insuficientes. Consulte sempre seu médico ou farmacêutico antes do uso.</p>
-            </div>
+            <h3>Bateria</h3>
+            <ul class="features-list">
+                <li class="feature-item"><strong>Inclui bateria</strong><span>Sim</span></li>
+                <li class="feature-item"><strong>Com base de carga</strong><span>Sim</span></li>
+                <li class="feature-item"><strong>Com bateria de lítio</strong><span>Sim</span></li>
+                <li class="feature-item"><strong>Tempo de carga da bateria</strong><span>3 h</span></li>
+                <li class="feature-item"><strong>Duração da bateria</strong><span>3 s</span></li>
+            </ul>
+
+            <h3>Potência</h3>
+            <ul class="features-list">
+                <li class="feature-item"><strong>Potência</strong><span>150 W</span></li>
+                <li class="feature-item"><strong>Frequência</strong><span>60 Hz</span></li>
+                <li class="feature-item"><strong>Potência de sucção</strong><span>3.675.000 W</span></li>
+                <li class="feature-item"><strong>Com regulador de potência</strong><span>Sim</span></li>
+                <li class="feature-item"><strong>Tipo de alimentação</strong><span>Bateria</span></li>
+            </ul>
+
+            <h3>Especificações</h3>
+            <ul class="features-list">
+                <li class="feature-item"><strong>Nível de pressão sonora</strong><span>10 dBA</span></li>
+                <li class="feature-item"><strong>Tipos de aspirador e limpador a vapor</strong><span>De mão</span></li>
+                <li class="feature-item"><strong>Função principal</strong><span>Enceradeira e aspirador</span></li>
+                <li class="feature-item"><strong>Funções adicionais</strong><span>Sopradora</span></li>
+                <li class="feature-item"><strong>Tipos de coletor</strong><span>Saco permanente</span></li>
+                <li class="feature-item"><strong>É adequado para líquido</strong><span>Não</span></li>
+                <li class="feature-item"><strong>É sem fio</strong><span>Sim</span></li>
+            </ul>
         </div>
 
         <div class="section" id="perguntas">
@@ -1471,332 +1529,398 @@
             <h2>Opiniões do produto</h2>
             <div class="reviews-content">
                 <div class="review-summary">
-    <p class="overall-rating">4.7</p>
-    <div class="review-summary-details">
-        <div class="star-rating">★★★★☆</div>
-        <p class="total-reviews">62 opiniões</p>
-    </div>
-</div>
-                <div class="reviews-list">
-                    <div class="reviews-with-photos">
-    <h3>Opiniões com fotos</h3>
-
-    <div class="individual-review" id="opiniao-ilustrativa-7">
-        <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>Escreva aqui o texto da opinião 1.</p>
-        <p><small>Exemplo de apresentação de opinião</small></p>
-        <div class="review-media">
-            <img src="https://exemplo.com/foto1.jpg" alt="Foto 1">
-            <img src="https://exemplo.com/foto2.jpg" alt="Foto 2">
-            <img src="https://exemplo.com/foto3.jpg" alt="Foto 3">
-            <img src="https://exemplo.com/foto4.jpg" alt="Foto 4">
-        </div>
-    </div>
-
-    <div class="individual-review" id="opiniao-ilustrativa-8">
-        <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>Escreva aqui o texto da opinião 2.</p>
-        <p><small>Exemplo de apresentação de opinião</small></p>
-        <div class="review-media">
-            <img src="https://exemplo.com/foto5.jpg" alt="Foto 1">
-            <img src="https://exemplo.com/foto6.jpg" alt="Foto 2">
-            <video controls playsinline preload="metadata">
-                <source src="https://exemplo.com/video1.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-
-    <div class="individual-review" id="opiniao-ilustrativa-9">
-        <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>Escreva aqui o texto da opinião 3.</p>
-        <p><small>Exemplo de apresentação de opinião</small></p>
-        <div class="review-media">
-            <img src="https://exemplo.com/foto7.jpg" alt="Foto 1">
-            <img src="https://exemplo.com/foto8.jpg" alt="Foto 2">
-            <img src="https://exemplo.com/foto9.jpg" alt="Foto 3">
-        </div>
-    </div>
-
-    <div class="individual-review" id="opiniao-ilustrativa-10">
-        <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>Escreva aqui o texto da opinião 4.</p>
-        <p><small>Exemplo de apresentação de opinião</small></p>
-        <div class="review-media">
-            <img src="https://exemplo.com/foto10.jpg" alt="Foto 1">
-            <img src="https://exemplo.com/foto11.jpg" alt="Foto 2">
-            <img src="https://exemplo.com/foto12.jpg" alt="Foto 3">
-            <video controls playsinline preload="metadata">
-                <source src="https://exemplo.com/video2.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-</div>
-
-<h3>Outras opiniões</h3>
-<div class="individual-review"><span class="review-date">04 nov. 2025</span>
+                    <p class="overall-rating">4.7</p>
+                    <div class="review-summary-details">
                         <div class="star-rating">★★★★☆</div>
-                        <p>Produto excelente! minha filha amou!.</p>
-                        <div class="review-actions"><button onclick="toggleHelpful(this, 60)">É útil | 60</button></div>
-                    </div>
-                    <div class="individual-review"><span class="review-date">26 out. 2025</span>
-                        <div class="star-rating">★★★★★</div>
-                        <p><strong>Tudo o que se espera.</strong></p>
-                        <div class="review-actions"><button onclick="toggleHelpful(this, 17)">É útil | 17</button></div>
-                    </div>
-                    <div class="individual-review"><span class="review-date">15 out. 2025</span>
-                        <div class="star-rating">★★★★★</div>
-                        <p><strong>Original, espetacular.</strong></p>
-                        <div class="review-actions"><button onclick="toggleHelpful(this, 7)">É útil | 7</button></div>
-                    </div>
-                    <div class="individual-review"><span class="review-date">02 nov. 2025</span>
-                        <div class="star-rating">★★★★★</div>
-                        <p>O produto é excelente, chegou muito rápido e bem embalado. Atendeu todas as minhas
-                            expectativas, recomendo a todos do Mercado Livre.</p>
-                        <div class="review-actions"><button onclick="toggleHelpful(this, 25)">É útil | 25</button></div>
-                    </div>
-                    <div class="individual-review"><span class="review-date">01 nov. 2025</span>
-                        <div class="star-rating">★★★★☆</div>
-                        <p>Bom produto, compensa muito o investimento.</p>
-                        <div class="review-actions"><button onclick="toggleHelpful(this, 11)">É útil | 11</button></div>
-                    </div>
-                    <div class="individual-review"><span class="review-date">28 fev. 2025</span>
-                        <div class="star-rating">★★★★★</div>
-                        <p><strong>Fantástico!</strong> Sem palavras para descrever a qualidade do produto.</p>
-                        <div class="review-actions"><button onclick="toggleHelpful(this, 31)">É útil | 31</button></div>
-                    
-                    
-                    </div>
-
+                        <p class="total-reviews">62 opiniões</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        let currentProduct = { name: 'Capacete LS2', color: '', price: 39.45, image: 'images/produto1.webp' };
-        let cart = [];
-        const galleryImages = [
-            "images/produto1.webp",
-            "images/produto2.webp",
-            "images/produto3.webp",
-            "images/produto4.webp"
-        ].filter(Boolean);
-        let currentImageIndex = 0;
+                <div class="reviews-list">
+                    <div class="reviews-with-photos">
+                        <h3>Opiniões com fotos</h3>
 
-        // As funções do PIX (openPixModal, generatePixPayment, etc.) NÃO SÃO MAIS NECESSÁRIAS AQUI.
-        // Elas serão movidas para o checkout.html
-
-        function updateCarouselState() {
-            if (galleryImages.length === 0) return;
-            document.getElementById('mainImage').style.backgroundImage = `url('${galleryImages[currentImageIndex]}')`;
-            document.querySelectorAll('.thumb').forEach((thumb, i) => {
-                thumb.classList.toggle('active', i === currentImageIndex);
-            });
-            const dotsContainer = document.getElementById('carousel-dots');
-            if (dotsContainer) {
-                dotsContainer.innerHTML = '';
-                if (galleryImages.length > 1) {
-                    galleryImages.forEach((img, i) => {
-                        const dot = document.createElement('span');
-                        dot.classList.add('dot');
-                        if (i === currentImageIndex) dot.classList.add('active');
-                        dot.onclick = () => { changeImage(i); };
-                        dotsContainer.appendChild(dot);
-                    });
-                }
-            }
-        }
-
-        function changeImage(index) {
-            if (index < 0 || index >= galleryImages.length) return;
-            currentImageIndex = index;
-            updateCarouselState();
-        }
-
-        function nextImage() {
-            if (galleryImages.length === 0) return;
-            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
-            updateCarouselState();
-        }
-
-        function prevImage() {
-            if (galleryImages.length === 0) return;
-            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-            updateCarouselState();
-        }
-
-        function selectColor(color, element) {
-            currentProduct.color = color;
-            document.getElementById('selectedColor').textContent = color;
-            document.querySelectorAll('.color-options .option-box').forEach(box => box.classList.remove('active'));
-            element.classList.add('active');
-            updateProductName();
-        }
-
-        function selectStorage(storage, element, price) {
-            currentProduct.storage = storage;
-            currentProduct.price = price;
-
-            const formattedPrice = `R$ ${price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-            document.getElementById('productPrice').textContent = formattedPrice;
-            document.getElementById('finalPrice').textContent = formattedPrice;
-            document.querySelectorAll('.storage-options .option-box').forEach(box => box.classList.remove('active'));
-            element.classList.add('active');
-            updateProductName();
-        }
-
-        function updateProductName() {
-            const titleEl = document.querySelector('h1');
-            if (titleEl) titleEl.textContent = `${currentProduct.name} - ${currentProduct.color}`;
-        }
-
-        function toggleCart() {
-            document.getElementById('cartSidebar').classList.toggle('open');
-            document.getElementById('cartOverlay').classList.toggle('active');
-        }
-
-        function closeCart() {
-            document.getElementById('cartSidebar').classList.remove('open');
-            document.getElementById('cartOverlay').classList.remove('active');
-        }
-
-        function addToCart() {
-            const existingItem = cart.find(item => item.name === currentProduct.name && item.color === currentProduct.color && item.storage === currentProduct.storage);
-            if (existingItem) {
-                existingItem.quantity++;
-            } else {
-                // Adicionamos a imagem ao objeto do carrinho
-                cart.push({ ...currentProduct, quantity: 1, id: Date.now(), image: galleryImages[currentImageIndex] || currentProduct.image });
-            }
-            updateCartDisplay();
-            showNotification('Produto adicionado ao carrinho!');
-        }
-
-        function removeFromCart(id) {
-            cart = cart.filter(item => item.id !== id);
-            updateCartDisplay();
-        }
-
-        function updateQuantity(id, change) {
-            const item = cart.find(item => item.id === id);
-            if (item) {
-                item.quantity += change;
-                if (item.quantity <= 0) {
-                    removeFromCart(id);
-                } else {
-                    updateCartDisplay();
-                }
-            }
-        }
-
-        function updateCartDisplay() {
-            const cartContent = document.getElementById('cartContent');
-            const cartCount = document.getElementById('cartCount');
-            const mobileCartCount = document.getElementById('mobileCartCount');
-            const cartTotal = document.getElementById('cartTotal');
-
-            if (cart.length === 0) {
-                cartContent.innerHTML = '<p style="text-align: center; color: #666; margin-top: 50px;">Seu carrinho está vazio</p>';
-                cartCount.textContent = '0';
-                if (mobileCartCount) mobileCartCount.textContent = '0';
-                cartTotal.textContent = 'Total: R$ 0,00';
-                return;
-            }
-            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            cartCount.textContent = totalItems;
-            if (mobileCartCount) mobileCartCount.textContent = totalItems;
-            cartTotal.textContent = `Total: R$ ${totalPrice.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-            cartContent.innerHTML = cart.map(item => `<div class="cart-item"><div class="cart-item-image" style="background-image: url('${item.image}')"></div><div class="cart-item-details"><div class="cart-item-name">${item.name} ${item.storage} - ${item.color}</div><div class="cart-item-price">R$ ${item.price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div><div class="quantity-controls"><button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button><span>${item.quantity}</span><button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button><button onclick="removeFromCart(${item.id})" style="margin-left: 10px; color: #ff4757; border: none; background: none; cursor: pointer;">🗑</button></div></div></div>`).join('');
-        }
-
-        function buyNow() {
-            addToCart();
-            toggleCart();
-        }
-
-        // --- FUNÇÃO CHECKOUT MODIFICADA ---
-        function checkout() {
-            if (cart.length === 0) {
-                showNotification('Seu carrinho está vazio!');
-                return;
-            }
-
-            // 1. Salva o carrinho e o total no localStorage do navegador
-            // Usamos JSON.stringify para converter o array de objetos em texto
-            localStorage.setItem('checkoutCart', JSON.stringify(cart));
-            
-            // 2. Redireciona o usuário para a nova página de checkout
-            window.location.href = 'checkout.html';
-        }
+                        <div class="individual-review" id="opiniao-ilustrativa-7">
+                            <span class="review-date">29 out. 2026</span>
+                            <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 
 
-        function showNotification(message) {
-            const notification = document.getElementById('notification');
-            if (notification) {
-                notification.textContent = message;
-                notification.classList.add('show');
-                setTimeout(() => notification.classList.remove('show'), 3000);
-            }
-        }
+                            <div class="review-media">
+                                <video controls playsinline preload="metadata">
+                                    <source
+                                        src="https://video-vod-clips.mms.mlstatic.com/v1/video/hls/cli_04xzu0y81ntclips/01a164af65b176f69d1c3d3c0cb2ce0b/master.m3u8"
+                                        type="video/mp4">
+                                </video>
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_681008-MLA117385009412_102026-F.webp"
+                                    alt="Foto 2">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_990452-MLA118476781122_102026-F.webp"
+                                    alt="Foto 3">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_739821-MLA120013381635_102026-F.webp"
+                                    alt="Foto 4">
+                            </div>
+                        </div>
 
-        function openQuestionModal() {
-            document.getElementById('questionModal').classList.add('active');
-        }
+                        <div class="individual-review" id="opiniao-ilustrativa-8">
+                            <span class="review-date">29 out. 2026</span>
+                            <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 
-        function closeQuestionModal() {
-            document.getElementById('questionModal').classList.remove('active');
-        }
 
-        function addQuestionToList(question) {
-            const list = document.getElementById('questionsList');
-            const newQuestionDiv = document.createElement('div');
-            newQuestionDiv.className = 'individual-review'; // Reutilizando estilo
-            newQuestionDiv.innerHTML = `<p><strong>P:</strong> ${question}</p><p><strong>R:</strong> Em breve o vendedor responderá.</p>`;
-            list.appendChild(newQuestionDiv);
-        }
+                            <div class="review-media">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_823662-MLA117098632686_102026-F.webp"
+                                    alt="Foto 1">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_865003-MLA117098483508_102026-F.webp"
+                                    alt="Foto 2">
+                                <video controls playsinline preload="metadata">
+                                    <source
+                                        src="https://video-vod-clips.mms.mlstatic.com/v1/video/hls/cli_04xzu0y81ntclips/01a16deb744f7729afbb60fa52986c73/master.m3u8"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
 
-        function submitQuestion() {
-            const input = document.getElementById('questionModalInput');
-            const question = input.value.trim();
-            if (question) {
-                addQuestionToList(question);
-                input.value = '';
-                closeQuestionModal();
-                showNotification('Pergunta enviada!');
-            }
-        }
+                        <div class="individual-review" id="opiniao-ilustrativa-9">
+                            <span class="review-date">29 out. 2026</span>
+                            <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 
-        function askQuestionInline() {
-            const input = document.getElementById('questionInput');
-            const question = input.value.trim();
-            if (question) {
-                addQuestionToList(question);
-                input.value = '';
-                showNotification('Pergunta enviada!');
-            }
-        }
 
-        function toggleHelpful(button, count) {
-            if (!button.classList.contains('active')) {
-                button.textContent = `É útil | ${count + 1}`;
-                button.classList.add('active');
-            }
-        }
+                            <div class="review-media">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_758653-MLA117742744638_102026-F.webp"
+                                    alt="Foto 1">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_748417-MLA111864709569_052026-F.webp"
+                                    alt="Foto 2">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_738317-MLA111589582793_052026-F.webp"
+                                    alt="Foto 3">
+                            </div>
+                        </div>
 
-        document.addEventListener('DOMContentLoaded', function () {
-            changeImage(0);
-            const firstColor = document.querySelector('.color-options .option-box');
-            if (firstColor) {
-                firstColor.classList.add('active');
-                currentProduct.color = firstColor.textContent;
-            }
-            const firstStorage = document.querySelector('.storage-options .option-box');
-            if (firstStorage) {
-                firstStorage.click();
-            }
-        });
-    </script>
+                        <div class="individual-review" id="opiniao-ilustrativa-10">
+                            <span class="review-date">29 out. 2026</span>
+                            <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+
+
+                            <div class="review-media">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_766760-MLA118075062129_092026-F.webp"
+                                    alt="Foto 1">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_908785-MLA117866488781_092026-F.webp"
+                                    alt="Foto 2">
+                                <video controls playsinline preload="metadata">
+                                    <source
+                                        src="https://video-vod-clips.mms.mlstatic.com/v1/video/hls/cli_04xzu0y81ntclips/01a101f6039d7de08f0cc7b5db315272/master.m3u8"
+                                        type="video/mp4">
+                                </video>
+                                <video controls playsinline preload="metadata">
+                                    <source
+                                        src="https://video-vod-clips.mms.mlstatic.com/v1/video/hls/cli_04xzu0y81ntclips/01a137b0f0b576adabb01426aef45c34/master.m3u8"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Outras opiniões</h3>
+
+                    <!-- AVALIAÇÕES FICTÍCIAS PARA TESTE -->
+
+                    <div class="individual-review">
+                        <span class="review-date">05 jun. 2026</span>
+                        <div class="star-rating">★★★★★</div>
+                        <p>Compacto e muito prático para limpar o interior do carro.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 12)">É útil | 12</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">10 jun. 2026</span>
+                        <div class="star-rating">★★★★★</div>
+                        <p>Gostei bastante do tamanho. É leve, fácil de guardar e os acessórios ajudam a alcançar
+                            espaços pequenos.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 18)">É útil | 18</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">15 jun. 2026</span>
+                        <div class="star-rating">★★★★☆</div>
+                        <p>Bom para limpezas rápidas do dia a dia.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 9)">É útil | 9</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">20 jun. 2026</span>
+                        <div class="star-rating">★★★★★</div>
+                        <p>O que mais gostei foi a função soprador. Ajuda bastante a tirar poeira de cantinhos difíceis,
+                            principalmente no painel do carro.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 24)">É útil | 24</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">05 jul. 2026</span>
+                        <div class="star-rating">★★★★★</div>
+                        <p>Pequeno, portátil e fácil de usar.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 7)">É útil | 7</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">10 jul. 2026</span>
+                        <div class="star-rating">★★★★☆</div>
+                        <p>É uma opção interessante para quem precisa limpar migalhas, poeira e pequenas sujeiras sem
+                            usar um aspirador grande.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 15)">É útil | 15</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">15 ago. 2026</span>
+                        <div class="star-rating">★★★★★</div>
+                        <p>Gostei da versatilidade das funções.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 11)">É útil | 11</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">20 ago. 2026</span>
+                        <div class="star-rating">★★★★★</div>
+                        <p>Uso para pequenas limpezas na mesa e no carro. O formato compacto facilita bastante o
+                            manuseio e o armazenamento.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 21)">É útil | 21</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">05 set. 2026</span>
+                        <div class="star-rating">★★★★☆</div>
+                        <p>Atende bem para serviços leves de limpeza.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 8)">É útil | 8</button></div>
+                    </div>
+
+                    <div class="individual-review">
+                        <span class="review-date">10 set. 2026</span>
+                        <div class="star-rating">★★★★★</div>
+                        <p>O tamanho é ideal para deixar no carro. Os diferentes bicos tornam o aparelho útil para
+                            limpar frestas e outras áreas de difícil acesso.</p>
+                        <div class="review-actions"><button onclick="toggleHelpful(this, 16)">É útil | 16</button></div>
+                    </div>
+                    <script>
+                        let currentProduct = { name: 'Mini Aspirador de Pó Portátil 4 em 1 USB', color: 'Preto', price: 87.60, image: 'https://http2.mlstatic.com/D_NQ_NP_2X_605517-MLA116415563636_092026-F.webp' };
+                        let cart = [];
+                        const galleryImages = [
+                            "https://http2.mlstatic.com/D_NQ_NP_2X_605517-MLA116415563636_092026-F.webp",
+                            "https://http2.mlstatic.com/D_NQ_NP_2X_712038-MLA117758146115_092026-F.webp",
+                            "https://http2.mlstatic.com/D_NQ_NP_2X_999452-MLA116267126900_092026-F.webp",
+                            "https://http2.mlstatic.com/D_NQ_NP_2X_872851-MLA117758146163_092026-F.webp",
+                            "https://http2.mlstatic.com/D_NQ_NP_2X_716508-MLA116267274388_092026-F.webp",
+                            "https://http2.mlstatic.com/D_NQ_NP_2X_615828-MLA116415652012_092026-F.webp",
+                        ].filter(Boolean);
+                        let currentImageIndex = 0;
+
+                        // As funções do PIX (openPixModal, generatePixPayment, etc.) NÃO SÃO MAIS NECESSÁRIAS AQUI.
+                        // Elas serão movidas para o checkout.html
+
+                        function updateCarouselState() {
+                            if (galleryImages.length === 0) return;
+                            document.getElementById('mainImage').style.backgroundImage = `url('${galleryImages[currentImageIndex]}')`;
+                            document.querySelectorAll('.thumb').forEach((thumb, i) => {
+                                thumb.classList.toggle('active', i === currentImageIndex);
+                            });
+                            const dotsContainer = document.getElementById('carousel-dots');
+                            if (dotsContainer) {
+                                dotsContainer.innerHTML = '';
+                                if (galleryImages.length > 1) {
+                                    galleryImages.forEach((img, i) => {
+                                        const dot = document.createElement('span');
+                                        dot.classList.add('dot');
+                                        if (i === currentImageIndex) dot.classList.add('active');
+                                        dot.onclick = () => { changeImage(i); };
+                                        dotsContainer.appendChild(dot);
+                                    });
+                                }
+                            }
+                        }
+
+                        function changeImage(index) {
+                            if (index < 0 || index >= galleryImages.length) return;
+                            currentImageIndex = index;
+                            updateCarouselState();
+                        }
+
+                        function nextImage() {
+                            if (galleryImages.length === 0) return;
+                            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+                            updateCarouselState();
+                        }
+
+                        function prevImage() {
+                            if (galleryImages.length === 0) return;
+                            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+                            updateCarouselState();
+                        }
+
+                        function selectColor(color, element) {
+                            currentProduct.color = color;
+                            document.getElementById('selectedColor').textContent = color;
+                            document.querySelectorAll('.color-options .option-box').forEach(box => box.classList.remove('active'));
+                            element.classList.add('active');
+                            updateProductName();
+                        }
+
+                        function selectStorage(storage, element, price) {
+                            currentProduct.storage = storage;
+                            currentProduct.price = price;
+
+                            const formattedPrice = `R$ ${price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                            document.getElementById('productPrice').textContent = formattedPrice;
+                            document.getElementById('finalPrice').textContent = formattedPrice;
+                            document.querySelectorAll('.storage-options .option-box').forEach(box => box.classList.remove('active'));
+                            element.classList.add('active');
+                            updateProductName();
+                        }
+
+                        function updateProductName() {
+                            const titleEl = document.querySelector('h1');
+                            if (titleEl) titleEl.textContent = `${currentProduct.name} - ${currentProduct.color}`;
+                        }
+
+                        function toggleCart() {
+                            document.getElementById('cartSidebar').classList.toggle('open');
+                            document.getElementById('cartOverlay').classList.toggle('active');
+                        }
+
+                        function closeCart() {
+                            document.getElementById('cartSidebar').classList.remove('open');
+                            document.getElementById('cartOverlay').classList.remove('active');
+                        }
+
+                        function addToCart() {
+                            const existingItem = cart.find(item => item.name === currentProduct.name && item.color === currentProduct.color && item.storage === currentProduct.storage);
+                            if (existingItem) {
+                                existingItem.quantity++;
+                            } else {
+                                // Adicionamos a imagem ao objeto do carrinho
+                                cart.push({ ...currentProduct, quantity: 1, id: Date.now(), image: galleryImages[currentImageIndex] || currentProduct.image });
+                            }
+                            updateCartDisplay();
+                            showNotification('Produto adicionado ao carrinho!');
+                        }
+
+                        function removeFromCart(id) {
+                            cart = cart.filter(item => item.id !== id);
+                            updateCartDisplay();
+                        }
+
+                        function updateQuantity(id, change) {
+                            const item = cart.find(item => item.id === id);
+                            if (item) {
+                                item.quantity += change;
+                                if (item.quantity <= 0) {
+                                    removeFromCart(id);
+                                } else {
+                                    updateCartDisplay();
+                                }
+                            }
+                        }
+
+                        function updateCartDisplay() {
+                            const cartContent = document.getElementById('cartContent');
+                            const cartCount = document.getElementById('cartCount');
+                            const mobileCartCount = document.getElementById('mobileCartCount');
+                            const cartTotal = document.getElementById('cartTotal');
+
+                            if (cart.length === 0) {
+                                cartContent.innerHTML = '<p style="text-align: center; color: #666; margin-top: 50px;">Seu carrinho está vazio</p>';
+                                cartCount.textContent = '0';
+                                if (mobileCartCount) mobileCartCount.textContent = '0';
+                                cartTotal.textContent = 'Total: R$ 0,00';
+                                return;
+                            }
+                            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                            cartCount.textContent = totalItems;
+                            if (mobileCartCount) mobileCartCount.textContent = totalItems;
+                            cartTotal.textContent = `Total: R$ ${totalPrice.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                            cartContent.innerHTML = cart.map(item => `<div class="cart-item"><div class="cart-item-image" style="background-image: url('${item.image}')"></div><div class="cart-item-details"><div class="cart-item-name">${item.name} ${item.storage} - ${item.color}</div><div class="cart-item-price">R$ ${item.price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div><div class="quantity-controls"><button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button><span>${item.quantity}</span><button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button><button onclick="removeFromCart(${item.id})" style="margin-left: 10px; color: #ff4757; border: none; background: none; cursor: pointer;">🗑</button></div></div></div>`).join('');
+                        }
+
+                        function buyNow() {
+                            addToCart();
+                            toggleCart();
+                        }
+
+                        // --- FUNÇÃO CHECKOUT MODIFICADA ---
+                        function checkout() {
+                            if (cart.length === 0) {
+                                showNotification('Seu carrinho está vazio!');
+                                return;
+                            }
+
+                            // 1. Salva o carrinho e o total no localStorage do navegador
+                            // Usamos JSON.stringify para converter o array de objetos em texto
+                            localStorage.setItem('checkoutCart', JSON.stringify(cart));
+
+                            // 2. Redireciona o usuário para a nova página de checkout
+                            window.location.href = 'checkout.html';
+                        }
+
+
+                        function showNotification(message) {
+                            const notification = document.getElementById('notification');
+                            if (notification) {
+                                notification.textContent = message;
+                                notification.classList.add('show');
+                                setTimeout(() => notification.classList.remove('show'), 3000);
+                            }
+                        }
+
+                        function openQuestionModal() {
+                            document.getElementById('questionModal').classList.add('active');
+                        }
+
+                        function closeQuestionModal() {
+                            document.getElementById('questionModal').classList.remove('active');
+                        }
+
+                        function addQuestionToList(question) {
+                            const list = document.getElementById('questionsList');
+                            const newQuestionDiv = document.createElement('div');
+                            newQuestionDiv.className = 'individual-review'; // Reutilizando estilo
+                            newQuestionDiv.innerHTML = `<p><strong>P:</strong> ${question}</p><p><strong>R:</strong> Em breve o vendedor responderá.</p>`;
+                            list.appendChild(newQuestionDiv);
+                        }
+
+                        function submitQuestion() {
+                            const input = document.getElementById('questionModalInput');
+                            const question = input.value.trim();
+                            if (question) {
+                                addQuestionToList(question);
+                                input.value = '';
+                                closeQuestionModal();
+                                showNotification('Pergunta enviada!');
+                            }
+                        }
+
+                        function askQuestionInline() {
+                            const input = document.getElementById('questionInput');
+                            const question = input.value.trim();
+                            if (question) {
+                                addQuestionToList(question);
+                                input.value = '';
+                                showNotification('Pergunta enviada!');
+                            }
+                        }
+
+                        function toggleHelpful(button, count) {
+                            if (!button.classList.contains('active')) {
+                                button.textContent = `É útil | ${count + 1}`;
+                                button.classList.add('active');
+                            }
+                        }
+
+                        document.addEventListener('DOMContentLoaded', function () {
+                            changeImage(0);
+                            const firstColor = document.querySelector('.color-options .option-box');
+                            if (firstColor) {
+                                firstColor.classList.add('active');
+                                currentProduct.color = firstColor.textContent;
+                            }
+                            const firstStorage = document.querySelector('.storage-options .option-box');
+                            if (firstStorage) {
+                                firstStorage.click();
+                            }
+                        });
+                    </script>
 </body>
 
 </html>
